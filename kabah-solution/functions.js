@@ -12,22 +12,27 @@ function maxOfTwoNumbers(a, b) {
 maxOfTwoNumbers(32, 89);
 
 // Question 2
+
 function maxOfThree(a, b, c) {
-if (a > b && c) {
-	return a;
-}
-else if (b > a && c) {
-	return b;
-}
-else {
-	return c;
-}
+	if (a > b && a > c) {
+		return a;
+	}
+	else if (b > a && b > c) {
+		return b;
+	}
+	else if (c > a && c > b) {
+		return c;
+	}
 }
 
 // Question 3
-function isCharacterAVowel() {
 
-}
+function isCharacterAVowel(c) {
+	if (c !== "a" || "e" || "i" || "o" || "u") {
+		return false;
+	}
+		return true;
+};
 
 // Question 4
 function sumArray() {
